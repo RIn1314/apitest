@@ -2,7 +2,7 @@
 import requests
 from common.timeBase import timeBase
 import HTMLTestRunnerCN
-
+from config.rootDirectory import rootDirectory
 class resultBase:
     '''    验证测试结果     '''
     def assertInfo(self,request,assertKeyword,showContent):
@@ -46,7 +46,10 @@ class resultBase:
     def outputReport(self,suite):
         getTime = timeBase()
         timeNow = getTime.getNowTime()
-        filePath ="E:\\Eclipse\\Workspace\\apiTest_xf2.0\\result\\"+ timeNow +"Report.html"       #确定生成报告的路径   
+        getRootDirectory = rootDirectory()
+        path = getRootDirectory.getRootDirectory()
+        filePath =path+ "\\result\\"+ timeNow +"Report.html"       #确定生成报告的路径 
+
         fp = file(filePath,'wb')
         runner = HTMLTestRunnerCN.HTMLTestRunner(
         stream=fp,
