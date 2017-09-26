@@ -1,0 +1,41 @@
+{
+    "testData1": [{
+        "Base_Host":  "http://127.0.0.1:8080/cdsxfsys",
+        "headers": "user-agent:my-app/0.0.1",
+        "url": "/contradiction/getWarnDepList" ,
+        "payload1": "type=department",
+        "loginUrl": "/login/in",
+        "userName": "auhyjbzxx",
+        "password": "e10adc3949ba59abbe56e057f20f883e"
+    },{
+        "Base_Host":  "http://127.0.0.1:8080/cdsxfsys",
+        "headers": "user-agent:my-app/0.0.1",
+        "url": "/contradiction/getWarnDepList" ,
+        "payload1": "type=department",
+        "loginUrl": "/login/in",
+        "userName": "admin",
+        "password": "b7fed7d01fd0b0e7b07ed0ee52cfa672"
+    }],
+    "authors": [{
+        "firstName": "Isaac",
+        "lastName": "Asimov",
+        "genre": "sciencefiction"
+    }, {
+        "firstName": "Tad",
+        "lastName": "Williams",
+        "genre": "fantasy"
+    }, {
+        "firstName": "Frank",
+        "lastName": "Peretti",
+        "genre": "christianfiction"
+    }],
+    "musicians": [{
+        "firstName": "Eric",
+        "lastName": "Clapton",
+        "instrument": "guitar"
+    }, {
+        "firstName": "Sergei",
+        "lastName": "Rachmaninoff",
+        "instrument": "piano"
+    }]
+}
